@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonArray;
 
@@ -7,6 +10,14 @@ public class XmlReader {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the fields you want to display (comma-separated): ");
             String[] fields = scanner.nextLine().split(",");
+            Set<String> validFields = new HashSet<>(Arrays.asList("name", "postalZip", "region", "country", "address", "list"));
+
+            for (String field : fields) {
+                if (!validFields.contains(field.trim())) {
+                    System.out.println("Invalid field: " + field);
+                    return;
+                }
+            }
 
             File inputFile = new File("path/to/your/data.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
