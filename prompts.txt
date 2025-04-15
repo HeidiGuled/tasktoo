@@ -1,10 +1,7 @@
 PROMPTS USED FOR TASK 2:
 
-1. "Write a Java program that reads an XML file and prints out field values using SAX parser."
-2. "Update the program so that it only prints user-selected fields."
-3. "Format the selected output as JSON."
-4. "Add error handling to ignore invalid fields or empty input."
-5. "Rewrite the XML parser to use SAX instead of DOM."
-6. "Write a JUnit test that simulates user input and checks output contains expected fields."
-7. "Does this meet the Practical 2 Task 2 marking checklist?"
-8. "Help me push it to GitHub and create the right files for submission."
+1. "I did a Java program that reads an XML file and prints out field values using SAX parser, help me Update the program so that it only prints user-selected fields step by step please."
+2. "Format the selected output as JSON as mine doesn't do that."
+3. "Add error handling to ignore invalid fields or empty input."
+4. "Rewrite the XML parser to use SAX instead of DOM."
+5. "Help me write a JUnit test that simulates user input and checks output contains expected fields, please."
